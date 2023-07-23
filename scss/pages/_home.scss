@@ -1,0 +1,341 @@
+main {
+    flex-grow: 1;
+    font-family: $main-font;
+    background-image: url('../../images/svg/main__bottom__img.svg');
+    background-repeat: no-repeat; 
+    background-position: 1100px 25rem;
+}
+
+
+
+.main__top{
+    font-family: $main-font;
+    hr {
+        margin-bottom: 7.2rem;
+        height: 1px;
+        background-color: $white;
+    }
+    .main__top__header {
+        margin-bottom: 14rem;
+    }
+    .main__top__wrappers {
+        display: flex;
+        gap: 3rem;
+    }
+    .main__top__texts {
+        width: 345px;
+        margin-bottom: 5.8rem;
+        h1 {
+            color: $white;
+            margin-bottom: 1.4rem;
+            font-size: $h2-fs;
+            line-height: $h2-lh;
+            letter-spacing: -1.5px;
+        }
+        h3 {
+            color: $grey;
+            font-size: $body-fs;
+            line-height: $body-lh;
+        }
+    }
+    .main__top__wrappers__botttom {
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    main {
+        background-image: url('../../images/svg/main__bottom__img.svg');
+        background-position: 580px 47rem;
+    }
+    .main__top {
+        width: 100%;
+        max-width: 708px;
+        hr {
+            width: 690px;
+        }
+    }
+    .main__top__header {
+        display: flex;
+        gap: 0.7rem;
+        margin-bottom: 10rem;
+        .main__top__wrappers {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .main__top__wrappers__botttom {
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .main__top {
+        margin-top: 20rem;
+        hr {
+            max-width: 343px;
+            height: 1px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main__top__header {
+            display: flex;
+            flex-direction: column;
+
+            .main__top__wrappers {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+
+            .main__top__texts {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+
+    }
+}
+
+
+
+.main__top__hero {
+    font-family: $main-font;
+    .main__hero__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8rem;
+        h1 {
+            font-size: $h1-fs;
+            line-height: $h1-lh;
+            letter-spacing: $lt-s;
+            color: $white;
+            transition: 0.3s;
+        }
+        h1:hover {
+            color: green;
+            transition: 0.3s;
+        }
+        .hero__btn {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            letter-spacing: $lt-s;
+            color: $white;
+            transition: 0.3s;
+            margin-top: 1rem;
+            &:hover {
+                color: green;
+                transition: 0.3s;
+            }
+            hr {
+                margin-top: 1rem;
+                width: 110px;
+                height: 2px;
+                border: 0;
+                background-color:green;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .main__top__hero {
+           .main__hero__header {
+                margin-bottom: 6rem;
+                h1 {
+                    font-size: 72px;
+                    line-height: 1;
+                }
+                .hero__btn {
+                    width: 100%;
+                    max-width: 120px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 576px) {
+
+        .main__hero__header {
+            .main__top__header__h1 {
+                font-size: 4rem;
+                line-height: 1;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+        }
+    
+    }
+
+
+    .main__cards {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main__top__cards__and__wrappers {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6.9rem;
+        gap: 0.7rem;
+        color: $white;
+        h1 {
+            transition: 0.3s;   
+        }
+        h1:hover {
+            color: orangered;
+        }
+        a {
+            margin-top: 0.7rem;
+            color: $white;
+            font-size: $body-fs;
+            line-height: $body-lh;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: orangered;
+        }
+        .main__btn {
+            margin-left: 1.8rem;
+        }
+        .main__top__btn__2 {
+            margin-left: 1.8rem;
+        }
+    }
+
+    .main__top__cards {
+        width: 540px;
+        height: 400px;
+        background-image: url("../../images/jpg/design-portfolio.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 3rem;
+
+        .main__top__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4.8rem;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .main__top__wrapper a {
+            color: $white;
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            display: inline-block;
+            position: relative;
+            transition: 0.3s;
+        }
+        .main__top__wrapper a:hover {
+            color: $green;
+        }
+        .main__top__wrapper a::before {
+            display: inline-block;
+            position: absolute;
+            content: '';
+            height: 0.2rem;
+            width: 0%;
+            background-color: $green;
+            bottom: -1rem;
+            left: 0;
+            transition: 0.3s;
+        }
+        .main__top__wrapper a:hover::before {
+            width: 100%;
+        }
+    }
+    .main__top__cards:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../../images/jpg/design-portfolio.jpg");
+        cursor: pointer;
+    }
+    .main__top__cards:hover  .main__top__wrapper {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .card-2{
+        background-image: url('../../images/jpg/e-learning-landing-page.jpg');
+    }
+    .card-2:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../../images/jpg/e-learning-landing-page.jpg");
+    }
+
+    .card-3{
+        background-image: url('../../images/jpg/todo-web-app.jpg');
+    }
+    .card-3:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../../images/jpg/todo-web-app.jpg");
+    }
+
+    .card-4{
+        background-image: url('../../images/jpg/entertainmet-web-app.jpg');
+    }
+    .card-4:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../../images/jpg/entertainmet-web-app.jpg");
+    }
+
+    .card-5{
+        background-image: url('../../images/jpg/memory-game.jpg');
+    }
+    .card-5:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../../images/jpg/memory-game.jpg");
+    }
+
+    .card-6{
+        background-image: url('../../images/jpg/art-galery-showcase.jpg');
+    }
+    .card-6:hover {
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../../images/jpg/art-galery-showcase.jpg");
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .main__cards {
+        width: 100%;
+        max-width: 708px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main__top__cards {
+        max-width: 342px;
+        height: 100px;
+    }
+    .main__top__cards__and__wrappers {
+        a {
+            color: $grey;
+        }
+    }
+
+}
+@media screen and (max-width:576px) {
+    .main__cards  {
+        width: 100%;
+        max-width: 343px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__top__cards {
+        width: 343px;
+        height: 253px;
+    }
+}
