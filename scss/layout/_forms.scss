@@ -33,6 +33,7 @@
             color: $white;
             margin-left: auto;
             transition: 0.3s;
+            margin-bottom: 9.2rem;
         }
         .footer__btn:hover {
             color: rgb(127, 255, 0);
@@ -53,20 +54,25 @@
             align-items: center;
             justify-content: center;
             input {
-                width: 380px;
+                max-width: 350px;
             }
             .form__message__input {
-                width: 380px;
+                max-width: 350px;
             }
         }
     }
 }
-@media screen and (max-width:567px) {
+@media screen and (max-width:576px) {
     .footer__top__right {
         scroll-behavior: smooth;
         form {
             input {
-                width: 300px;
+                width: 100%;
+                max-width: 343px;
+            }
+            .form__message__input {
+                width: 100%;
+                max-width: 343px;
             }
         }
     }

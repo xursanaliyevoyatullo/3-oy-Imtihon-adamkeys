@@ -7,14 +7,13 @@ main {
     scroll-behavior: smooth;
 }
 
-
-
 .main__top{
     font-family: $main-font;
     hr {
+        padding-top: 10rem;
+        border: 0;
+        border-bottom: 1.5px solid $white;
         margin-bottom: 7.2rem;
-        height: 1px;
-        background-color: $white;
     }
     .main__top__header {
         margin-bottom: 14rem;
@@ -54,7 +53,8 @@ main {
         width: 100%;
         max-width: 708px;
         hr {
-            width: 690px;
+            width: 100%;
+            max-width: 706px;
         }
     }
     .main__top__header {
@@ -112,10 +112,9 @@ main {
     .main__hero__header {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 10rem;
+        justify-content: space-between;
         margin-bottom: 8rem;
-        h1 {
+        .main__top__header__h1 {
             font-size: $h1-fs;
             line-height: $h1-lh;
             letter-spacing: $lt-s;
@@ -132,7 +131,7 @@ main {
             letter-spacing: $lt-s;
             color: $white;
             transition: 0.3s;
-            margin-top: 4rem;
+            margin-top: 2rem;
             &:hover {
                 color: green;
                 transition: 0.3s;
@@ -148,17 +147,16 @@ main {
     }
 
     @media screen and (max-width:768px) {
-        .main__top__hero {
-           .main__hero__header {
-                margin-bottom: 6rem;
-                h1 {
-                    font-size: 72px;
-                    line-height: 1;
-                }
-                .hero__btn {
-                    width: 100%;
-                    max-width: 120px;
-                }
+
+        .main__hero__header {
+            margin-bottom: 6rem;
+            .main__top__header__h1  {
+                font-size: 7.2rem;
+                line-height: 1;
+            }
+            .hero__btn {
+                width: 100%;
+                max-width: 120px;
             }
         }
     }
@@ -304,9 +302,19 @@ main {
     }
 }
 
-
-
 @media screen and (max-width:768px) {
+    .main__hero__header {
+        width: 100%;
+        max-width: 706px;
+        h1 {
+            font-size: 7.2rem;
+        }
+        .hero__btn {
+            width: 100%;
+            max-width: 120px;
+            padding-top: 3rem;
+        }
+    }
     .main__cards {
         width: 100%;
         max-width: 708px;
@@ -337,7 +345,8 @@ main {
     }
 
     .main__top__cards {
-        width: 343px;
+        width: 100%;
+        max-width: 343px;
         height: 253px;
     }
 }

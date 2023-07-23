@@ -421,6 +421,7 @@ body {
   color: #FFFFFF;
   margin-left: auto;
   transition: 0.3s;
+  margin-bottom: 9.2rem;
 }
 .footer__top__right .footer__btn:hover {
   color: rgb(127, 255, 0);
@@ -435,18 +436,23 @@ body {
     justify-content: center;
   }
   .footer__top__right form input {
-    width: 380px;
+    max-width: 350px;
   }
   .footer__top__right form .form__message__input {
-    width: 380px;
+    max-width: 350px;
   }
 }
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 576px) {
   .footer__top__right {
     scroll-behavior: smooth;
   }
   .footer__top__right form input {
-    width: 300px;
+    width: 100%;
+    max-width: 343px;
+  }
+  .footer__top__right form .form__message__input {
+    width: 100%;
+    max-width: 343px;
   }
 }
 .header {
@@ -463,7 +469,6 @@ body {
   background-position: top right;
   background-size: 455px;
   height: 110vh;
-  margin-bottom: 10.4rem;
 }
 .header .header__container .header__top {
   display: flex;
@@ -497,18 +502,21 @@ body {
     background-position: top right;
     display: inline-block;
   }
-  .header .header__container .header__top {
-    padding-bottom: 2.5rem;
+  .header .header__top {
+    margin-bottom: 2.5rem;
   }
-  .header .header__container .header__top .header__logo {
-    width: 172px;
+  .header .header__top .header__logo {
+    width: 100%;
+    max-width: 172px;
   }
-  .header .header__container .header__top .sitenav__list {
-    width: 192px;
+  .header .header__top .sitenav__list {
+    width: 100%;
+    max-width: 192px;
     justify-content: center;
   }
-  .header .header__container .header__top .site__nav__icons {
-    width: 24px;
+  .header .header__top .site__nav__icons {
+    width: 100%;
+    max-width: 24px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -526,15 +534,18 @@ body {
     flex-direction: column;
   }
   .header .header__container .header__top .header__logo {
-    width: 129px;
+    width: 100%;
+    max-width: 129px;
   }
   .header .header__container .header__top .sitenav__list {
-    width: 192px;
+    width: 100%;
+    max-width: 192px;
     gap: 2.5rem;
     margin-right: 1rem;
   }
   .header .header__container .header__top .site__nav__icons {
-    width: 15px;
+    width: 100%;
+    max-width: 15px;
   }
 }
 .hero__top {
@@ -614,10 +625,11 @@ body {
     display: block;
   }
   .hero__top h2 {
+    width: 100%;
+    max-width: 445px;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.6;
-    width: 445px;
     margin-bottom: 3rem;
   }
   .hero__top h3 hr {
@@ -705,10 +717,16 @@ body {
 
 @media screen and (max-width: 768px) {
   .footer__top {
+    width: 100%;
+    max-width: 768px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .footer__top__container {
+    width: 100%;
+    max-width: 768px;
   }
   .footer__top__left h1 {
     font-size: 7.2rem;
@@ -733,7 +751,8 @@ body {
     margin-bottom: 2rem;
   }
   .footer__top__left h3 {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
   }
 }
@@ -779,7 +798,8 @@ body {
 }
 @media screen and (max-width: 576px) {
   .footer__bottom hr {
-    width: 380px;
+    width: 100%;
+    max-width: 260px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -802,9 +822,10 @@ main {
   font-family: "Space Grotesk", sans-serif;
 }
 .main__top hr {
+  padding-top: 10rem;
+  border: 0;
+  border-bottom: 1.5px solid #FFFFFF;
   margin-bottom: 7.2rem;
-  height: 1px;
-  background-color: #FFFFFF;
 }
 .main__top .main__top__header {
   margin-bottom: 14rem;
@@ -844,7 +865,8 @@ main {
     max-width: 708px;
   }
   .main__top hr {
-    width: 690px;
+    width: 100%;
+    max-width: 706px;
   }
   .main__top__header {
     display: flex;
@@ -893,11 +915,10 @@ main {
 .main__top__hero .main__hero__header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: space-between;
   margin-bottom: 8rem;
 }
-.main__top__hero .main__hero__header h1 {
+.main__top__hero .main__hero__header .main__top__header__h1 {
   font-size: 8.8rem;
   line-height: 1;
   letter-spacing: 1.5px;
@@ -914,7 +935,7 @@ main {
   letter-spacing: 1.5px;
   color: #FFFFFF;
   transition: 0.3s;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .main__top__hero .main__hero__header .hero__btn:hover {
   color: green;
@@ -928,14 +949,14 @@ main {
   background-color: green;
 }
 @media screen and (max-width: 768px) {
-  .main__top__hero .main__top__hero .main__hero__header {
+  .main__top__hero .main__hero__header {
     margin-bottom: 6rem;
   }
-  .main__top__hero .main__top__hero .main__hero__header h1 {
-    font-size: 72px;
+  .main__top__hero .main__hero__header .main__top__header__h1 {
+    font-size: 7.2rem;
     line-height: 1;
   }
-  .main__top__hero .main__top__hero .main__hero__header .hero__btn {
+  .main__top__hero .main__hero__header .hero__btn {
     width: 100%;
     max-width: 120px;
   }
@@ -1068,6 +1089,18 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  .main__hero__header {
+    width: 100%;
+    max-width: 706px;
+  }
+  .main__hero__header h1 {
+    font-size: 7.2rem;
+  }
+  .main__hero__header .hero__btn {
+    width: 100%;
+    max-width: 120px;
+    padding-top: 3rem;
+  }
   .main__cards {
     width: 100%;
     max-width: 708px;
@@ -1093,7 +1126,8 @@ main {
     margin-right: auto;
   }
   .main__top__cards {
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     height: 253px;
   }
 }/*# sourceMappingURL=style.css.map */
