@@ -353,6 +353,7 @@ body {
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 768px) {
@@ -385,12 +386,76 @@ body {
   font-weight: 700;
   src: url("../fonts/space-grotesk-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.footer__top__right {
+  scroll-behavior: smooth;
+}
+.footer__top__right form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.footer__top__right form input {
+  width: 44.5rem;
+  height: 4.3rem;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  color: #FFFFFF;
+  margin-bottom: 3.2rem;
+  padding-left: 1rem;
+}
+.footer__top__right form .form__message__input {
+  width: 445px;
+  margin-bottom: 3.2rem;
+}
+.footer__top__right .footer__btn {
+  width: 135px;
+  height: 38px;
+  background-color: #242424;
+  border: 0;
+  border-bottom: 1px solid rgb(127, 255, 0);
+  color: #FFFFFF;
+  margin-left: auto;
+  transition: 0.3s;
+}
+.footer__top__right .footer__btn:hover {
+  color: rgb(127, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .footer__top__right {
+    scroll-behavior: smooth;
+  }
+  .footer__top__right form {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__top__right form input {
+    width: 380px;
+  }
+  .footer__top__right form .form__message__input {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .footer__top__right {
+    scroll-behavior: smooth;
+  }
+  .footer__top__right form input {
+    width: 300px;
+  }
+}
 .header {
   font-family: "Space Grotesk", sans-serif;
   background-image: url("../../images/svg/header-hero-img-left.svg");
   background-repeat: no-repeat;
   background-position-y: 13.3rem;
   position: relative;
+  scroll-behavior: smooth;
 }
 .header .header__container {
   background-image: url("../../images/svg/heade-hero-img.svg");
@@ -672,61 +737,8 @@ body {
     text-align: center;
   }
 }
-.footer__top__right h3 {
-  color: #FFFFFF;
-  font-size: 1.6rem;
-  line-height: 1.6;
-  letter-spacing: -0.22px;
-  margin-bottom: 1.6rem;
-  margin-left: 2.4rem;
-  opacity: 50%;
-  transition: 0.3s;
-}
-.footer__top__right h3:hover {
-  color: rgb(127, 255, 0);
-}
-.footer__top__right hr {
-  width: 445px;
-  height: 2px;
-  border: 0;
-  margin-bottom: 3.2rem;
-  transition: 0.3s;
-  background-color: #D9D9D9;
-}
-.footer__top__right hr:hover {
-  background-color: rgb(127, 255, 0);
-}
-.footer__top__right .footer__top__right__bottom h3 {
-  margin-bottom: 8.1rem;
-}
-.footer__top__right .footer__top__btn {
-  color: #FFFFFF;
-}
-.footer__top__right .footer__top__btn a {
-  font-size: 1.6rem;
-  line-height: 1.6;
-  letter-spacing: 2.29px;
-  margin-left: 30.5rem;
-  margin-bottom: 1rem;
-  transition: 0.3s;
-  color: #FFFFFF;
-}
-.footer__top__right .footer__top__btn a:hover {
-  color: rgb(127, 255, 0);
-}
-.footer__top__right .footer__top__btn hr {
-  width: 140px;
-  margin-left: 30.7rem;
-  height: 2px;
-  border: 0;
-  background-color: rgb(127, 255, 0);
-}
-
-@media screen and (max-width: 768px) {
-  .footer__top__btn hr {
-    width: 120px;
-    margin-bottom: 9.2rem;
-  }
+.footer__bottom {
+  scroll-behavior: smooth;
 }
 .footer__bottom hr {
   margin-bottom: 4.7rem;
@@ -747,6 +759,12 @@ body {
 .footer__bottom .footer__bottom__header .footer__nav__icons {
   display: flex;
 }
+.footer__bottom .footer__bottom__header .footer__nav__icons svg {
+  display: flex;
+}
+.footer__bottom .footer__bottom__header .footer__nav__icons svg:hover {
+  background-color: rgb(127, 255, 0);
+}
 
 @media screen and (max-width: 768px) {
   hr {
@@ -761,7 +779,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .footer__bottom hr {
-    width: 443px;
+    width: 380px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -777,6 +795,7 @@ main {
   background-image: url("../../images/svg/main__bottom__img.svg");
   background-repeat: no-repeat;
   background-position: 1100px 25rem;
+  scroll-behavior: smooth;
 }
 
 .main__top {
@@ -874,7 +893,8 @@ main {
 .main__top__hero .main__hero__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10rem;
   margin-bottom: 8rem;
 }
 .main__top__hero .main__hero__header h1 {
@@ -894,7 +914,7 @@ main {
   letter-spacing: 1.5px;
   color: #FFFFFF;
   transition: 0.3s;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 .main__top__hero .main__hero__header .hero__btn:hover {
   color: green;
